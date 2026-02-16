@@ -9,161 +9,161 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #0d0d0d;
+            background: #111;
             color: #fff;
         }
 
         header {
+            background: #000;
+            padding: 20px;
             text-align: center;
-            padding: 40px 20px;
-            background: linear-gradient(to bottom, #000, #111);
-        }
-
-        header h1 {
-            letter-spacing: 3px;
-            font-size: 32px;
+            font-size: 26px;
+            font-weight: bold;
             color: #d4af37;
-            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
-        header p {
+        /* Banner */
+        .banner {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to bottom, #000, #222);
+        }
+
+        .banner h1 {
+            font-size: 36px;
+            color: #d4af37;
+        }
+
+        .banner p {
+            color: #ccc;
+            margin-top: -10px;
             font-size: 18px;
-            opacity: 0.9;
         }
 
-        .btn-whats {
+        .btn {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
             background: #d4af37;
             color: #000;
-            text-decoration: none;
-            font-weight: bold;
+            padding: 12px 25px;
             border-radius: 6px;
+            margin-top: 20px;
+            font-weight: bold;
+            text-decoration: none;
         }
 
         /* Serviços */
         .servicos {
-            padding: 50px 20px;
             text-align: center;
+            padding: 40px 20px;
         }
 
         .servicos h2 {
-            font-size: 26px;
-            margin-bottom: 40px;
             color: #d4af37;
+            margin-bottom: 30px;
         }
 
-        .grid-servicos {
+        .cards {
+            max-width: 1100px;
+            margin: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
-            padding: 0 20px;
         }
 
         .card {
-            background: #1a1a1a;
+            background: #222;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 8px;
             border: 1px solid #333;
         }
 
-        .card h3 {
-            color: #d4af37;
-        }
-
-        /* GALERIA */
+        /* Galeria */
         .galeria {
             padding: 50px 20px;
             text-align: center;
         }
 
         .galeria h2 {
-            font-size: 26px;
-            margin-bottom: 30px;
             color: #d4af37;
+            margin-bottom: 20px;
         }
 
-        .grid-fotos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 15px;
-            padding: 0 20px;
-        }
-
-        .grid-fotos img {
-            width: 100%;
+        .galeria img {
+            width: 95%;
+            max-width: 700px;
             border-radius: 10px;
-            border: 2px solid #333;
+            margin: 20px 0;
+            border: 2px solid #444;
         }
 
+        /* Vídeo */
+        .video {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .video video {
+            width: 95%;
+            max-width: 700px;
+            border-radius: 10px;
+            border: 2px solid #444;
+        }
+
+        /* Rodapé */
         footer {
+            background: #000;
             text-align: center;
             padding: 20px;
-            margin-top: 30px;
-            background: #000;
-            color: #777;
+            margin-top: 40px;
+            color: #888;
             font-size: 14px;
         }
-
     </style>
 </head>
+
 <body>
 
-    <header>
-        <h1>Almeida Rebuild</h1>
-        <p>Reformas • Construção • Acabamento</p>
+<header>ALMEIDA REBUILD</header>
 
-        <a class="btn-whats" href="https://wa.me/5511948573494" target="_blank">
-            Solicitar Orçamento
-        </a>
-    </header>
+<section class="banner">
+    <h1>Reformas, Construção e Acabamento</h1>
+    <p>Profissionalismo, qualidade e confiança para transformar seu lar.</p>
+    <a class="btn" href="https://wa.me/11948573494" target="_blank">Solicitar Orçamento</a>
+</section>
 
-    <section class="servicos">
-        <h2>Nossos Serviços</h2>
+<section class="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="cards">
+        <div class="card">Reformas em Geral</div>
+        <div class="card">Pintura Profissional</div>
+        <div class="card">Elétrica & Hidráulica</div>
+        <div class="card">Construção & Acabamento</div>
+    </div>
+</section>
 
-        <div class="grid-servicos">
+<section class="galeria">
+    <h2>Nossos Trabalhos</h2>
 
-            <div class="card">
-                <h3>Reformas em Geral</h3>
-                <p>Transformamos ambientes com qualidade e eficiência.</p>
-            </div>
+    <!-- FOTOS NA ORDEM QUE ESTÃO NO GITHUB -->
+    <img src="WhatsApp Image 2026-02-16 at 18.45.04.jpeg" alt="Foto 1">
+    <img src="WhatsApp Image 2026-02-16 at 18.45.05.jpeg" alt="Foto 2">
+    <img src="b.jpeg" alt="Foto 3">
+    <img src="foto de trabalho.jpeg" alt="Foto 4">
+    <img src="t.jpeg" alt="Foto 5">
+</section>
 
-            <div class="card">
-                <h3>Pintura</h3>
-                <p>Acabamento fino com padrão profissional.</p>
-            </div>
+<section class="video">
+    <h2>Vídeo do Serviço</h2>
+    <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos.
+    </video>
+</section>
 
-            <div class="card">
-                <h3>Elétrica e Hidráulica</h3>
-                <p>Serviços técnicos com segurança e garantia.</p>
-            </div>
-
-            <div class="card">
-                <h3>Construção</h3>
-                <p>Do zero ao acabamento final.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="galeria">
-        <h2>Galeria de Trabalhos</h2>
-
-        <div class="grid-fotos">
-
-            <img src="WhatsApp Image 2026-02-16 at 18.45.04.jpeg" alt="">
-            <img src="WhatsApp Image 2026-02-16 at 18.45.05.jpeg" alt="">
-            <img src="bj.jpeg" alt="">
-            <img src="foto de trabalho.jpeg" alt="">
-            <img src="t.jpeg" alt="">
-
-        </div>
-    </section>
-
-    <footer>
-        © 2026 - Almeida Rebuild | Todos os direitos reservados
-    </footer>
+<footer>
+    © 2026 Almeida Rebuild — Todos os direitos reservados.
+</footer>
 
 </body>
 </html>
