@@ -1,169 +1,85 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almeida Rebuild - Reformas e Construção</title>
+<!-- HERO COM VÍDEO DE FUNDO -->
+<section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="video.mp4" type="video/mp4">
+    </video>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: #fff;
-        }
+    <div class="hero-overlay"></div>
 
-        header {
-            background: #000;
-            padding: 20px;
-            text-align: center;
-            font-size: 26px;
-            font-weight: bold;
-            color: #d4af37;
-            letter-spacing: 2px;
-        }
-
-        /* Banner */
-        .banner {
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(to bottom, #000, #222);
-        }
-
-        .banner h1 {
-            font-size: 36px;
-            color: #d4af37;
-        }
-
-        .banner p {
-            color: #ccc;
-            margin-top: -10px;
-            font-size: 18px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #d4af37;
-            color: #000;
-            padding: 12px 25px;
-            border-radius: 6px;
-            margin-top: 20px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        /* Serviços */
-        .servicos {
-            text-align: center;
-            padding: 40px 20px;
-        }
-
-        .servicos h2 {
-            color: #d4af37;
-            margin-bottom: 30px;
-        }
-
-        .cards {
-            max-width: 1100px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: #222;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #333;
-        }
-
-        /* Galeria */
-        .galeria {
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .galeria h2 {
-            color: #d4af37;
-            margin-bottom: 20px;
-        }
-
-        .galeria img {
-            width: 95%;
-            max-width: 700px;
-            border-radius: 10px;
-            margin: 20px 0;
-            border: 2px solid #444;
-        }
-
-        /* Vídeo */
-        .video {
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .video video {
-            width: 95%;
-            max-width: 700px;
-            border-radius: 10px;
-            border: 2px solid #444;
-        }
-
-        /* Rodapé */
-        footer {
-            background: #000;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #888;
-            font-size: 14px;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>ALMEIDA REBUILD</header>
-
-<section class="banner">
-    <h1>Reformas, Construção e Acabamento</h1>
-    <p>Profissionalismo, qualidade e confiança para transformar seu lar.</p>
-    <a class="btn" href="https://wa.me/11948573494" target="_blank">Solicitar Orçamento</a>
-</section>
-
-<section class="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="cards">
-        <div class="card">Reformas em Geral</div>
-        <div class="card">Pintura Profissional</div>
-        <div class="card">Elétrica & Hidráulica</div>
-        <div class="card">Construção & Acabamento</div>
+    <div class="hero-content">
+        <h1>Almeida Rebuild</h1>
+        <p>Transformando ambientes com qualidade, elegância e compromisso.</p>
+        <a class="btn-whatsapp" href="https://wa.me/5511948573494" target="_blank">
+            Solicitar Orçamento
+        </a>
     </div>
 </section>
 
-<section class="galeria">
-    <h2>Nossos Trabalhos</h2>
+<style>
+/* HERO */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
 
-    <!-- FOTOS NA ORDEM QUE ESTÃO NO GITHUB -->
-    <img src="WhatsApp Image 2026-02-16 at 18.45.04.jpeg" alt="Foto 1">
-    <img src="WhatsApp Image 2026-02-16 at 18.45.05.jpeg" alt="Foto 2">
-    <img src="b.jpeg" alt="Foto 3">
-    <img src="foto de trabalho.jpeg" alt="Foto 4">
-    <img src="t.jpeg" alt="Foto 5">
-</section>
+.hero-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
-<section class="video">
-    <h2>Vídeo do Serviço</h2>
-    <video controls>
-        <source src="video.mp4" type="video/mp4">
-        Seu navegador não suporta vídeos.
-    </video>
-</section>
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55); /* Escurece o vídeo */
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
-<footer>
-    © 2026 Almeida Rebuild — Todos os direitos reservados.
-</footer>
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 0 20px;
+}
 
-</body>
-</html>
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #d4af37; /* Dourado */
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #d4af37; /* Dourado */
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background: white;
+    color: black;
+}
+</style>
