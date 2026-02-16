@@ -3,176 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almeida Rebuild - Reformas & Construção</title>
+    <title>Almeida Rebuild - Reformas e Construção</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #000;
+            background: #0d0d0d;
             color: #fff;
         }
 
         header {
-            background: #000;
-            padding: 25px;
             text-align: center;
-            border-bottom: 2px solid #d4af37;
+            padding: 40px 20px;
+            background: linear-gradient(to bottom, #000, #111);
         }
 
         header h1 {
-            margin: 0;
-            font-size: 2.6rem;
+            letter-spacing: 3px;
+            font-size: 32px;
             color: #d4af37;
-            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         header p {
-            font-size: 1.2rem;
-            color: #fff;
+            font-size: 18px;
+            opacity: 0.9;
         }
 
-        nav {
-            text-align: center;
-            background: #111;
-            padding: 15px 0;
-            border-bottom: 1px solid #333;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #d4af37;
+        .btn-whats {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #d4af37;
+            color: #000;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.1rem;
+            border-radius: 6px;
         }
 
-        section {
+        /* Serviços */
+        .servicos {
             padding: 50px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #d4af37;
             text-align: center;
-            font-size: 2rem;
-            margin-bottom: 25px;
         }
 
-        .servicos-lista {
+        .servicos h2 {
+            font-size: 26px;
+            margin-bottom: 40px;
+            color: #d4af37;
+        }
+
+        .grid-servicos {
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
             gap: 20px;
+            padding: 0 20px;
         }
 
         .card {
-            background: #111;
-            border: 1px solid #d4af37;
+            background: #1a1a1a;
             padding: 20px;
             border-radius: 10px;
+            border: 1px solid #333;
         }
 
         .card h3 {
             color: #d4af37;
-            margin-top: 0;
         }
 
-        .btn-whats {
-            display: block;
-            margin: 40px auto;
-            background: #25D366;
-            color: #000;
-            padding: 15px 25px;
-            border-radius: 8px;
-            width: fit-content;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
+        /* GALERIA */
+        .galeria {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .galeria h2 {
+            font-size: 26px;
+            margin-bottom: 30px;
+            color: #d4af37;
+        }
+
+        .grid-fotos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 15px;
+            padding: 0 20px;
+        }
+
+        .grid-fotos img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #333;
         }
 
         footer {
             text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-            border-top: 1px solid #d4af37;
-            color: #d4af37;
+            padding: 20px;
+            margin-top: 30px;
             background: #000;
+            color: #777;
+            font-size: 14px;
         }
+
     </style>
 </head>
-
 <body>
 
-<header>
-    <h1>Almeida Rebuild</h1>
-    <p>Transformando sua casa com qualidade e confiança</p>
-</header>
+    <header>
+        <h1>Almeida Rebuild</h1>
+        <p>Reformas • Construção • Acabamento</p>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#contato">Contato</a>
-</nav>
+        <a class="btn-whats" href="https://wa.me/5511948573494" target="_blank">
+            Solicitar Orçamento
+        </a>
+    </header>
 
-<section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>
-        A Almeida Rebuild é especializada em reformas residenciais e comerciais,
-        oferecendo serviços com qualidade, comprometimento e transparência.
-        Cada projeto é realizado com atenção aos detalhes, garantindo a satisfação
-        total dos nossos clientes.
-    </p>
-</section>
+    <section class="servicos">
+        <h2>Nossos Serviços</h2>
 
-<section id="servicos">
-    <h2>Nossos Serviços</h2>
+        <div class="grid-servicos">
 
-    <div class="servicos-lista">
+            <div class="card">
+                <h3>Reformas em Geral</h3>
+                <p>Transformamos ambientes com qualidade e eficiência.</p>
+            </div>
 
-        <div class="card">
-            <h3>Reformas Completas</h3>
-            <p>Do início ao fim, entregamos um serviço premium com acabamento impecável.</p>
+            <div class="card">
+                <h3>Pintura</h3>
+                <p>Acabamento fino com padrão profissional.</p>
+            </div>
+
+            <div class="card">
+                <h3>Elétrica e Hidráulica</h3>
+                <p>Serviços técnicos com segurança e garantia.</p>
+            </div>
+
+            <div class="card">
+                <h3>Construção</h3>
+                <p>Do zero ao acabamento final.</p>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Pintura Profissional</h3>
-            <p>Pintura interna e externa com materiais de alta qualidade.</p>
+    <section class="galeria">
+        <h2>Galeria de Trabalhos</h2>
+
+        <div class="grid-fotos">
+
+            <img src="WhatsApp Image 2026-02-16 at 18.45.04.jpeg" alt="">
+            <img src="WhatsApp Image 2026-02-16 at 18.45.05.jpeg" alt="">
+            <img src="bj.jpeg" alt="">
+            <img src="foto de trabalho.jpeg" alt="">
+            <img src="t.jpeg" alt="">
+
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Drywall & Gesso</h3>
-            <p>Divisórias, sancas, forros e decoração moderna.</p>
-        </div>
-
-        <div class="card">
-            <h3>Elétrica & Hidráulica</h3>
-            <p>Manutenções, instalações e revisões completas.</p>
-        </div>
-
-        <div class="card">
-            <h3>Acabamento Fino</h3>
-            <p>Detalhes que elevam o padrão visual da sua casa.</p>
-        </div>
-
-    </div>
-</section>
-
-<section id="contato">
-    <h2>Contato</h2>
-    <p style="text-align:center;">
-        Fale conosco pelo WhatsApp e faça seu orçamento sem compromisso.
-    </p>
-
-    <a class="btn-whats" 
-       href="https://wa.me/5511948573494?text=Olá%20gostaria%20de%20um%20orçamento!" 
-       target="_blank">
-       📞 Falar no WhatsApp
-    </a>
-</section>
-
-<footer>
-    Almeida Rebuild © 2026 — Todos os direitos reservados
-</footer>
+    <footer>
+        © 2026 - Almeida Rebuild | Todos os direitos reservados
+    </footer>
 
 </body>
 </html>
