@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
 
             /* FUNDO DO SITE (LOGO) */
-            background-image: url('logotipo.jpeg'); /* nome EXATO do arquivo */
+            background-image: url('logotipo.jpeg'); 
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -53,12 +53,21 @@
             padding: 10px;
         }
 
-        .gallery img, .gallery video {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid gold;
+        }
+
+        /* VÍDEO MENOR E CENTRALIZADO */
+        .gallery video {
+            max-width: 300px;    /* <-- tamanho do vídeo */
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid gold;
+            display: block;
+            margin: 0 auto;
         }
 
         .whatsapp-button {
