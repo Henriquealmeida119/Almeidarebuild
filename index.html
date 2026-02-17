@@ -3,198 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Almeida Rebuild</title>
-
-    <!-- Ícones Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <title>Almeida Rebuild - Manutenção e Reformas</title>
 
     <style>
-        /* ------------------ RESET / GERAL ------------------ */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #000;
-            color: #fff;
+            color: white;
+            background-image: url('b.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
-        h1, h2 {
-            color: #d4af37;
-            letter-spacing: 1px;
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0,0,0,0.7);
         }
 
-        section {
-            padding: 60px 20px;
+        h1 {
+            font-size: 38px;
+            color: gold;
+            margin: 0;
+        }
+
+        h2 {
+            color: gold;
+            margin-top: 40px;
             text-align: center;
         }
 
-        .btn {
-            background-color: #d4af37;
-            padding: 12px 25px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-
-        /* ------------------ HERO COM LOGO ------------------ */
-        .hero {
-            position: relative;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            overflow: hidden;
-            background: url('logo.png') center/contain no-repeat;
-            background-color: #000;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.6);
-            z-index: 1;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        /* ------------------ SERVIÇOS ------------------ */
-        .services {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .service-card {
-            width: 250px;
+        .container {
             padding: 20px;
-            background: #111;
-            border-radius: 10px;
-            border: 1px solid #333;
+            background: rgba(0,0,0,0.6);
         }
 
-        .service-card i {
-            font-size: 40px;
-            color: #d4af37;
-            margin-bottom: 10px;
-        }
-
-        /* ------------------ GALERIA ------------------ */
         .gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 10px;
         }
 
         .gallery img, .gallery video {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
+            width: 100%;
             border-radius: 10px;
-            border: 2px solid #d4af37;
+            border: 2px solid gold;
         }
 
-        /* ------------------ CONTATO ------------------ */
-        .contact a {
-            font-size: 25px;
-            color: #d4af37;
-            margin: 10px;
-            display: inline-block;
-        }
-
-        /* ------------------ RODAPÉ ------------------ */
-        footer {
-            background: #111;
-            padding: 20px;
+        .whatsapp-button {
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 30px auto;
+            padding: 15px;
             text-align: center;
-            color: #888;
+            font-size: 20px;
+            background: gold;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: rgba(0,0,0,0.7);
+            color: white;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- ================== HERO / LOGO DE FUNDO ================== -->
-    <div class="hero">
-        <div class="hero-overlay"></div>
+<header>
+    <h1>ALMEIDA REBUILD</h1>
+    <p>Manutenção • Instalação • Reforma</p>
+</header>
 
-        <div class="hero-content">
-            <h1>Almeida Rebuild</h1>
-            <p>Transformando ambientes com qualidade, elegância e compromisso.</p>
-            <br>
-            <a href="#contato" class="btn">Solicitar Orçamento</a>
-        </div>
+<div class="container">
+
+    <h2>Galeria de Fotos</h2>
+    <div class="gallery">
+        <img src="foto de trabalho.jpeg" alt="Trabalho 1">
+        <img src="WhatsApp Image 2026-02-16 at 18.45.04.jpeg" alt="Trabalho 2">
+        <img src="WhatsApp Image 2026-02-16 at 18.45.05.jpeg" alt="Trabalho 3">
+        <img src="t.jpeg" alt="Foto 4">
     </div>
 
-    <!-- ================== SERVIÇOS ================== -->
-    <section id="servicos">
-        <h2>Serviços</h2>
-        <div class="services">
-            <div class="service-card">
-                <i class="bi bi-hammer"></i>
-                <h3>Reformas</h3>
-                <p>Serviços completos de reforma para todos os tipos de ambientes.</p>
-            </div>
+    <h2>Vídeo</h2>
+    <div class="gallery">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
 
-            <div class="service-card">
-                <i class="bi bi-tools"></i>
-                <h3>Instalações</h3>
-                <p>Instalação de equipamentos, estruturas e sistemas residenciais e comerciais.</p>
-            </div>
+    <a class="whatsapp-button" href="https://wa.me/5511948573494" target="_blank">
+        Falar no WhatsApp
+    </a>
 
-            <div class="service-card">
-                <i class="bi bi-wrench-adjustable-circle"></i>
-                <h3>Manutenções</h3>
-                <p>Manutenção preventiva e corretiva para sua casa ou empresa.</p>
-            </div>
-        </div>
-    </section>
+</div>
 
-    <!-- ================== GALERIA ================== -->
-    <section id="galeria">
-        <h2>Galeria de Projetos</h2>
-
-        <div class="gallery">
-
-            <!-- Fotos -->
-            <img src="WhatsApp Image 2026-02-16 at 18.45.04.jpeg" alt="Projeto 1">
-            <img src="WhatsApp Image 2026-02-16 at 18.45.05.jpeg" alt="Projeto 2">
-            <img src="b.jpeg" alt="Projeto 3">
-            <img src="foto de trabalho.jpeg" alt="Projeto 4">
-
-            <!-- Vídeo adicionado -->
-            <video controls>
-                <source src="video.mp4" type="video/mp4">
-            </video>
-
-        </div>
-    </section>
-
-    <!-- ================== CONTATO ================== -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Pronto para transformar seu ambiente?</p>
-
-        <div class="contact">
-            <a href="https://wa.me/55SEUNUMERO" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-            </a>
-
-            <a href="mailto:seuemail@gmail.com">
-                <i class="bi bi-envelope"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- ================== FOOTER ================== -->
-    <footer>
-        © 2026 Almeida Rebuild — Todos os direitos reservados.
-    </footer>
+<footer>
+    <p>Contato: almeidarebuild@gmail.com</p>
+</footer>
 
 </body>
 </html>
