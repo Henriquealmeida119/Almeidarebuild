@@ -36,7 +36,7 @@
             border-radius: 5px;
         }
 
-        /* ------------------ HERO COM VÍDEO ------------------ */
+        /* ------------------ HERO COM LOGO ------------------ */
         .hero {
             position: relative;
             height: 90vh;
@@ -45,28 +45,20 @@
             justify-content: center;
             text-align: center;
             overflow: hidden;
-        }
-
-        .bg-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
+            background: url('logo.png') center/contain no-repeat;
+            background-color: #000;
         }
 
         .hero-overlay {
             position: absolute;
             inset: 0;
             background: rgba(0,0,0,0.6);
-            z-index: 2;
+            z-index: 1;
         }
 
         .hero-content {
             position: relative;
-            z-index: 3;
+            z-index: 2;
         }
 
         /* ------------------ SERVIÇOS ------------------ */
@@ -99,7 +91,7 @@
             gap: 20px;
         }
 
-        .gallery img {
+        .gallery img, .gallery video {
             width: 300px;
             height: 200px;
             object-fit: cover;
@@ -127,12 +119,8 @@
 
 <body>
 
-    <!-- ================== HERO ================== -->
+    <!-- ================== HERO / LOGO DE FUNDO ================== -->
     <div class="hero">
-        <video class="bg-video" autoplay muted loop playsinline>
-            <source src="video.mp4" type="video/mp4">
-        </video>
-
         <div class="hero-overlay"></div>
 
         <div class="hero-content">
@@ -154,9 +142,9 @@
             </div>
 
             <div class="service-card">
-                <i class="bi bi-bricks"></i>
-                <h3>Construção</h3>
-                <p>Execução com qualidade e uso dos melhores materiais.</p>
+                <i class="bi bi-tools"></i>
+                <h3>Instalações</h3>
+                <p>Instalação de equipamentos, estruturas e sistemas residenciais e comerciais.</p>
             </div>
 
             <div class="service-card">
@@ -172,10 +160,18 @@
         <h2>Galeria de Projetos</h2>
 
         <div class="gallery">
+
+            <!-- Fotos -->
             <img src="WhatsApp Image 2026-02-16 at 18.45.04.jpeg" alt="Projeto 1">
             <img src="WhatsApp Image 2026-02-16 at 18.45.05.jpeg" alt="Projeto 2">
             <img src="b.jpeg" alt="Projeto 3">
             <img src="foto de trabalho.jpeg" alt="Projeto 4">
+
+            <!-- Vídeo adicionado -->
+            <video controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+
         </div>
     </section>
 
